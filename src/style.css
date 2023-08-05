@@ -6,6 +6,8 @@
     border-width: 1px;
 }
 
+/* PAGELOAD.JS CSS STYLE */
+
 #content
 {
     background-color: rgb(252, 126, 126);
@@ -57,4 +59,45 @@
 {
     /* Parent flex properties */
     flex: 1;
+
+    /* Sub Flex properties */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* HOMELOAD.JS CSS STYLES */
+
+
+
+
+/* MENULOAD.JS CSS STYLES */
+
+.pizzaContainer
+{
+    /* General properties */
+
+    /* Flex properties */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pizzaHeader
+{
+    /* General properties */
+
+    /* Text properties */
+    font-size: 25px;
+    text-align: center;
+}
+
+.pizzaTypes
+{
+    /* General properties */
+    padding: 10px;
+    /* Flex properties */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

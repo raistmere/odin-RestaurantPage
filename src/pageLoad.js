@@ -1,3 +1,6 @@
+// This script handles loading the page with the base html structure.
+// Should really be called pageSetup.js instead.
+
 export default function pageLoad()
 {
     //This is the main div container that holds the page content.
@@ -7,7 +10,7 @@ export default function pageLoad()
     // Create a element that will be the header for the page
     const header = document.createElement("div");
     header.classList.add("header");
-    header.textContent = "MY RESTURANT";
+    header.textContent = "Pizza Station";
     container.appendChild(header);
 
     // Create a new element that will hold the sidebar & middleContent
@@ -25,7 +28,6 @@ export default function pageLoad()
     // This will be the container that will be changing/clearing
     const midContent = document.createElement("div");
     midContent.classList.add("midContent");
-    midContent.textContent = "MIDCONTENT";
     midContainer.appendChild(midContent);
 
     // Create the sidebar button container for webpage navigation
