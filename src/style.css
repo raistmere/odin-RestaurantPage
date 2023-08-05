@@ -3,8 +3,8 @@
     padding: 0;
     margin: 0;
     
-    border: solid;
-    border-width: 1px;
+    /* border: solid;
+    border-width: 1px; */
 }
 
 /* PAGELOAD.JS CSS STYLE */
@@ -12,7 +12,7 @@
 body
 {
     /* General properties */
-    background-color: rgb(252, 126, 126);
+    background-color: rgb(255, 255, 255);
 
     /* Flex properties */
     display: flex;
@@ -25,6 +25,10 @@ body
     /* General properties */
     min-width: 500px;
     width: 1000px;
+
+    /* Border properties */
+    border-style: solid;
+    border-width: 5px;  
 }
 
 .header
@@ -32,11 +36,16 @@ body
     /* General properties */
     width: auto;
     height: auto;
+    background-color: rgb(229, 250, 253);;
 
     /* Flex properties */
     display: grid;
     grid-template-columns: 175px auto;
     grid-template-rows: 1fr;
+
+    /* Border properties */
+    border-bottom-style: solid;
+    border-width: 5px;
 }
 
 .headerText
@@ -46,7 +55,6 @@ body
     height: auto;
     font-size: 75px;
     padding-top: 30px;
-    background-color: white;
 
     /* Parent flex properties */
     grid-column: 2/-1;
@@ -62,11 +70,14 @@ body
     /* General properties */
     width: 175px;
     height: 150px;
+
+    /* Background properties */
     background-position: center;
     background-size: 100%;
     background-repeat:no-repeat;
+    /* Image citation */
+    /* Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1976107">Jan</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1976107">Pixabay</a> */
     background-image: url('./headerLogo.png');
-    background-color: white;
 
     /* Parent flex properties */
     grid-column: 1/-1;
@@ -78,7 +89,8 @@ body
     /* General properties */
     width: auto;
     height: 100vh;
-    background-color: rgb(78, 151, 151);
+    background-color: rgb(141, 190, 197);
+
     /* Flex properties */
     display: flex;
 }
@@ -89,6 +101,11 @@ body
     width: 125px;
     height: auto;
     padding: 25px;
+    background-color: rgb(180, 211, 216);
+
+    /* Border properties */
+    border-right-style: solid;
+    border-width: 2px;
 }
 
 .sidebarButtons
@@ -110,6 +127,8 @@ body
 
 .midContent
 {
+    /* General properties */
+    padding: 25px;
     /* Parent flex properties */
     flex: 1;
 
@@ -124,15 +143,35 @@ body
 {
     /* Text properties */
     font-size: 25px;
+    text-align: center;
+    background-color: white;
+
+    /* Border properties */
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
 }
 
 .pizzaSpaceImg
 {
     /* General properties */
-    width: 90%;
-    height: 60%;
+    width: 700px;
+    height: 400px;
     align-self: center;
-    background-color: rgb(48, 179, 179);
+
+    /* Background properties */
+    background-position: center;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-color: white;
+    /* Image by <a href="https://pixabay.com/users/publicdomainimages-327722/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=386717">PublicDomainImages</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=386717">Pixabay</a> */
+    background-image: url('./pizzaImg01.jpg');
+
+    /* Border properties */
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
 }
 
 
