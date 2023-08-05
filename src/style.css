@@ -88,7 +88,7 @@ body
 {
     /* General properties */
     width: auto;
-    height: 100vh;
+    height: auto;
     background-color: rgb(141, 190, 197);
 
     /* Flex properties */
@@ -129,6 +129,7 @@ body
 {
     /* General properties */
     padding: 25px;
+    
     /* Parent flex properties */
     flex: 1;
 
@@ -141,6 +142,10 @@ body
 /* HOMELOAD.JS CSS STYLES */
 .homeHeader
 {
+    /* General properties */
+    height: 40px;
+    padding-top: 10px;
+    
     /* Text properties */
     font-size: 25px;
     text-align: center;
@@ -177,31 +182,98 @@ body
 
 
 /* MENULOAD.JS CSS STYLES */
-.pizzaContainer
+.menuHeader
 {
     /* General properties */
-
-    /* Flex properties */
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.pizzaHeader
-{
-    /* General properties */
+    height: 40px;
+    padding: 5px;
 
     /* Text properties */
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
+    background-color: white;
+
+    /* Border properties */
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
 }
 
-.pizzaTypes
+.pizzaContainer, .menuTypeContainer
 {
     /* General properties */
-    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
     /* Flex properties */
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.pizzaHeader, .menuTypeHeader
+{
+    /* Text properties */
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+
+    /* Border properties */
+    border-style: solid;
+    border-width: 2px;
+}
+
+.pizzaTypes, .itemTypes
+{
+    /* General properties */
+    padding: 10px 20px 10px 20px;
+
+    /* Flex properties */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pizza, .items
+{
+    /* General properties */
+    width: auto;
+    height: 100px;
+
+    /* Flex properties */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pizzaTitle, .itemTitle
+{
+    /* General properties */
+    width: auto;
+    padding: 1px;
+    background-color: whitesmoke;
+    
+    /* Text properties */
+    text-align: center;
+    font-size: 22px;
+
+    /* Border properties */
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+
+    /* Parent flex properties */
+}
+
+.pizzaText, .itemText
+{
+    /* General properties */
+    width: auto;
+    height: 100%;
+
+    /* Text properties */
+    font-size: 18px;
+
+    /* Border properties */
+    border-bottom-style: solid;
 }
