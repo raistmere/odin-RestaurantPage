@@ -2,22 +2,75 @@
 {
     padding: 0;
     margin: 0;
+    
     border: solid;
     border-width: 1px;
 }
 
 /* PAGELOAD.JS CSS STYLE */
 
+body
+{
+    /* General properties */
+    background-color: rgb(252, 126, 126);
+
+    /* Flex properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #content
 {
-    background-color: rgb(252, 126, 126);
+    /* General properties */
+    min-width: 500px;
+    width: 1000px;
 }
 
 .header
 {
+    /* General properties */
     width: auto;
-    height: 50px;
-    background-color: rgb(104, 214, 214);
+    height: auto;
+
+    /* Flex properties */
+    display: grid;
+    grid-template-columns: 175px auto;
+    grid-template-rows: 1fr;
+}
+
+.headerText
+{
+    /* General properties */
+    width: 100%;
+    height: auto;
+    font-size: 75px;
+    padding-top: 30px;
+    background-color: white;
+
+    /* Parent flex properties */
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+
+    /* Text properties */
+    color: rgb(80, 80, 80);
+    text-align: start;
+}
+
+.headerLogo
+{
+    /* General properties */
+    width: 175px;
+    height: 150px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-image: url('./headerLogo.png');
+    background-color: white;
+
+    /* Parent flex properties */
+    grid-column: 1/-1;
+    grid-row: 1/-1;
 }
 
 .midContainer
@@ -33,9 +86,9 @@
 .sidebar
 {
     /* General properties */
-    width: auto;
+    width: 125px;
     height: auto;
-    padding: 20px;
+    padding: 25px;
 }
 
 .sidebarButtons
@@ -67,12 +120,24 @@
 }
 
 /* HOMELOAD.JS CSS STYLES */
+.homeHeader
+{
+    /* Text properties */
+    font-size: 25px;
+}
 
+.pizzaSpaceImg
+{
+    /* General properties */
+    width: 90%;
+    height: 60%;
+    align-self: center;
+    background-color: rgb(48, 179, 179);
+}
 
 
 
 /* MENULOAD.JS CSS STYLES */
-
 .pizzaContainer
 {
     /* General properties */

@@ -7,11 +7,21 @@ export default function pageLoad()
     const container = document.getElementById('content');
     console.log(container);
 
-    // Create a element that will be the header for the page
+    // HEADER\\
+    // Create a header container element
     const header = document.createElement("div");
     header.classList.add("header");
-    header.textContent = "Pizza Station";
     container.appendChild(header);
+    // Create a header logo element
+    const headerLogo = document.createElement("div");
+    headerLogo.classList.add("headerLogo");
+    header.appendChild(headerLogo);
+    // Create a header text element
+    const headerText = document.createElement("p");
+    headerText.classList.add("headerText");
+    headerText.textContent = "Pizza Station";
+    header.appendChild(headerText);
+
 
     // Create a new element that will hold the sidebar & middleContent
     const midContainer = document.createElement("div");
@@ -21,7 +31,6 @@ export default function pageLoad()
     // Create a new element that will be the navigation sidebar
     const sidebar = document.createElement("div");
     sidebar.classList.add("sidebar");
-    sidebar.textContent = "SIDEBAR";
     midContainer.appendChild(sidebar);
 
     // Create a new element for the middleContent

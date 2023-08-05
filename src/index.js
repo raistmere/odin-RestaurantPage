@@ -7,6 +7,9 @@ import contactLoad from './contactLoad.js';
 // css imports
 import css from './style.css';
 
+// img imports
+import headerBGImg from './headerLogo.png';
+
 //Webpage setup
 pageLoad();
 
