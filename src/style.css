@@ -169,6 +169,7 @@ body
     background-size: 100%;
     background-repeat:no-repeat;
     background-color: white;
+    /* Image citation */
     /* Image by <a href="https://pixabay.com/users/publicdomainimages-327722/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=386717">PublicDomainImages</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=386717">Pixabay</a> */
     background-image: url('./pizzaImg01.jpg');
 
@@ -181,8 +182,8 @@ body
 
 
 
-/* MENULOAD.JS CSS STYLES */
-.menuHeader
+/* MENULOAD.JS & CONTACTLOAD.JS CSS STYLES */
+.menuHeader, .contactHeader
 {
     /* General properties */
     height: 40px;
@@ -199,7 +200,7 @@ body
     border-radius: 10px;
 }
 
-.pizzaContainer, .menuTypeContainer
+.pizzaContainer, .menuTypeContainer, .catagoryContainer
 {
     /* General properties */
     padding-left: 20px;
@@ -211,7 +212,7 @@ body
     gap: 10px;
 }
 
-.pizzaHeader, .menuTypeHeader
+.pizzaHeader, .menuTypeHeader, .catagoryHeader
 {
     /* Text properties */
     font-size: 30px;
@@ -265,15 +266,17 @@ body
     /* Parent flex properties */
 }
 
-.pizzaText, .itemText
+.pizzaText, .itemText, .catagoryText
 {
     /* General properties */
     width: auto;
     height: 100%;
 
     /* Text properties */
-    font-size: 18px;
+    font-size: 20px;
+    text-align: center;
 
     /* Border properties */
     border-bottom-style: solid;
 }
+

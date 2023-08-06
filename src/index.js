@@ -29,4 +29,4 @@ contactButton.addEventListener('click', contactLoad.bind(midContent), false);
 
 
 //Set starting content default to homeLoad content
-homeLoad.bind(midContent)();
+contactLoad.bind(midContent)();
